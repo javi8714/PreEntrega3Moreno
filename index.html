@@ -1,14 +1,35 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculadora basica</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Venta de  golosinas</title>
 </head>
 <body>
-    <h1>Calculadora Basica</h1>
+    <h1>Venta de golosinas</h1>
     
-    <script src="./main.js"></script>
-</body>
+    <div id="productos">
+      <h2>Productos</h2>
+      <ul>
+        <li>Chicles ($1.50): <button onclick="agregarProducto('chicles', 1.5)">Agregar</button></li>
+        <li>Gomitas ($2.00): <button onclick="agregarProducto('gomitas', 2.0)">Agregar</button></li>
+        <li>Chocolate ($3.00): <button onclick="agregarProducto('chocolate', 3.0)">Agregar</button></li>
+      </ul>
+    </div>
+
+    <div id="carrito">
+        <h2>Carrito de compras</h2>
+        <ul id="lista-carrito"></ul>
+        <p>Total: $<span id="total"></span></p>
+        <button onclick="vaciarCarrito()">Vaciar carrito</button>
+    </div>
+
+    <footer>
+        <p>>© 2023 Venta de Golosinas</p>
+    </footer>
+
+      <script src="script.js"></script>
+  </body>
 </html>
